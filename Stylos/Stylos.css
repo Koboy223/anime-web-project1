@@ -1,0 +1,14 @@
+
+body.modo-nocturno {
+    background-color: #000000;
+    color: #ffffff88;
+}
+
+
+body.modo-nocturno #searchInput:focus {
+    outline: none;
+    border-color: #0056b3;
+    box-shadow: 5px 5px 10px rgba(0, 123, 255, 0.5);
+    color: rgb(255, 255, 255);
+}
+

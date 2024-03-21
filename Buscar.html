@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="Scrips/Menu-loader.js"></script>
+    <script src="Scrips/Buscar.js"></script>
+    <link rel="stylesheet" href="Stylos/Stylos.css">
+    <link rel="stylesheet" href="Stylos/Buacar.css">
+    <link rel="stylesheet" href="Stylos/Adaptacion-de-pantallas.css">
+    <title>Buscador</title>
+</head>
+<body>
+   <h1>Busqueda completa en las paginas</h1>
+    <div id="searchContainer">
+        <input type="text" id="searchInput" placeholder="Ingresa para buscar" oninput="searchFunction()">
+        <input type="reset" id="reset" value="Borrar">
+        <img id="searchIcon" src="imagnes/lupa.png" alt="Buscar" onclick="searchFunction()">
+    </div>
+    <div id="preview"></div>
+
+    
+    <script>
+   
+// Escuchar el evento "input" en el campo de búsqueda
+document.getElementById('reset').addEventListener('click', function() {
+    document.getElementById('searchInput').value = ''; // Borra el texto del campo de entrada
+    document.getElementById('preview').innerHTML = ''; // Limpia la vista previa
+});
+
+    </script>
+</body>
+</html>
+
+    
+	
+</body>
+</html>

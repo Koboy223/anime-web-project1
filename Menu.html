@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>menu</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<script src="Scrips/Menu-loader.js"></script>
+<link rel="stylesheet" href="Stylos/Stylos.css">
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+.menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #00000068;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    padding: 0; /* Elimina el padding */
+    margin: 0;
+}
+.menu-item {
+    color: rgba(255, 255, 255, 0.807);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+    margin: 0;
+    padding: 8px 15px; /* Ajuste del padding vertical a 8px y ancho horizontal a 20px */
+    position: relative;
+}
+
+
+.menu-item .menu-bar {
+    margin-top: 5px; /* Añade espacio entre la barra y el texto */
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff60;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+    color: #fffdfd8e;
+    background-color: #ffffff60;
+}
+
+.menu-item:hover .menu-bar {
+    transform: translateX(-50%) scaleX(1);
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div id="noticias"></div>
+</div>
+<div class="menu">
+  <a href="index.html" class="menu-item">
+    <i class="fas fa-home"></i>
+    Inicio
+    <div class="menu-bar"></div>
+  </a>
+  <a href="Buscar.html" class="menu-item">
+    <i class="fas fa-search"></i>
+    Buscar
+    <div class="menu-bar"></div>
+  </a>
+  <a href="Añadir.html" class="menu-item">
+    <i class="fas fa-plus"></i>
+    Agregar
+    <div class="menu-bar"></div>
+  </a>
+  <a href="Favoritos.html" class="menu-item">
+    <i class="fas fa-heart"></i>
+    Favoritos
+    <div class="menu-bar"></div>
+  </a>
+  <a href="Perfil.html" class="menu-item">
+    <i class="fas fa-user"></i>
+    Perfil
+    <div class="menu-bar"></div>
+  </a>
+</div>
+ 
+</body>
+</html>
